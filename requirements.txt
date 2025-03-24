@@ -1,0 +1,9 @@
+numpy
+aiohttp
+fastapi
+uvicorn
+pydantic
+python-dotenv
+python-multipart
+neuralgcm
+tenacity
