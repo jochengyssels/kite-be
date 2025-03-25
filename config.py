@@ -8,10 +8,14 @@ load_dotenv()
 class Settings(BaseSettings):
     """Application settings."""
     # API Keys
-    api_key_name1: str = os.getenv("API_KEY_NAME1", "")
-    api_key_name2: str = os.getenv("API_KEY_NAME2", "")
-    openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
-    weather_api_key: str = os.getenv("WEATHER_API_KEY", "")
+    groq_api_key: str = os.getenv("GROQ_API_KEY", "gsk_RKeG7qd7lpOxnK2k9EHpWGdyb3FYICtRBvXSfMfiFdfZlwjpUQ6")
+    weatherbit_api_key: str = os.getenv("WEATHERBIT_API_KEY", "09b83eefa6ee49a58f535740e7e73528")
+    tomorrow_api_key: str = os.getenv("TOMORROW_API_KEY", "zbtDpBoMzGlylEh5tblXugBsjkTyfw2S")
+    locationiq_api_key: str = os.getenv("LOCATIONIQ_API_KEY", "pk.7d195946b1d5836bbef50b02dc8a4a41")
+    maptiler_api_key: str = os.getenv("MAPTILER_API_KEY", "tVjXN27gMACKRAmwmC1v")
+    
+    # URLs
+    iksurfmag_feed_url: str = os.getenv("IKSURFMAG_FEED_URL", "https://www.iksurfmag.com/feed/")
     
     # Other settings
     app_name: str = "Kite API"
